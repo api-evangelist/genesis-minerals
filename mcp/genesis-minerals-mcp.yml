@@ -1,0 +1,28 @@
+name: Genesis Minerals MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+source:
+- https://genesisminerals.com.au/.well-known/mcp.json
+- https://genesisminerals.com.au/.well-known/mcp/server-card.json
+description: >-
+  Checked for an official Genesis Minerals MCP server and found none. On 2026-10-21
+  https://genesisminerals.com.au/.well-known/mcp.json and /.well-known/mcp/server-card.json
+  both returned HTTP 500 (a WordPress error page, not a JSON document). Pre-flight contract
+  discovery on genesisminerals.com.au found no MCP, OpenAPI, AsyncAPI or GraphQL surface, and
+  a web search for a Genesis Minerals MCP server or developer API returned only unrelated
+  "Genesis" products (Autify Genesis, Genesis Global, genesis-mcp physics simulation). Genesis
+  Minerals is an ASX-listed gold producer with no published API, so there is no OpenAPI to
+  derive a candidate tool list from and this file lists no tools.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+probes:
+- url: https://genesisminerals.com.au/.well-known/mcp.json
+  status: 500
+- url: https://genesisminerals.com.au/.well-known/mcp/server-card.json
+  status: 500
+- url: https://genesisminerals.com.au/llms.txt
+  status: 404

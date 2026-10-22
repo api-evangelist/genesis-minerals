@@ -1,0 +1,47 @@
+generated: '2026-10-21'
+method: searched
+source: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+note: >-
+  Genesis Minerals (ASX: GMD) is a gold miner, not an API provider. The only legal page linked
+  from https://genesisminerals.com.au/ is its corporate Privacy Policy (GMD-CORP-POL-1003, PDF).
+  It is the only source used here. The homepage also links a purchase-order T&C PDF, which is
+  procurement terms and was not used. The policy covers access, correction and complaints only.
+  It names no retention period, no subprocessor list, no breach-notification commitment, no
+  data residency or overseas-transfer statement, and nothing on AI, so none of those signals is recorded.
+signals:
+  data_subject_request:
+    url: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+    section: Access and Correction
+    channel: info@genesiminerals.com.au (as printed in the policy; postal Level 7, 40 The Esplanade, Perth WA 6000)
+    rights_named: [access, correction, complaint]
+    evidence:
+    - source: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You have the right to access and correct your personal information held by us. Please contact us using the
+        details below to exercise these rights.
+    - source: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If you have concerns about how we handle your personal information, please contact us using the details
+        provided below. We will investigate and respond to your complaint in a timely manner.
+    note: >-
+      The policy names access and correction rights under the Australian Privacy Act 1988 and the APPs, plus a
+      complaint route. It states no response deadline, no deletion or portability right, and no escalation to
+      the OAIC. The contact email domain is printed as "genesiminerals.com.au", which looks like a typo for genesisminerals.com.au.
+  subprocessors:
+    url: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+    section: Disclosure of Personal Information
+    list_published: false
+    evidence:
+    - source: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Third-party service providers and contractors who assist in the provision of our services if required for
+        Company business.
+    note: >-
+      The policy discloses only the CATEGORY of onward recipients ("We may disclose personal information to:").
+      It publishes no named subprocessor list and makes no change-notification commitment.

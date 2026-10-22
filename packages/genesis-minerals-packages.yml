@@ -1,0 +1,9 @@
+name: Genesis Minerals packages
+generated: '2026-10-21'
+method: none
+source:
+- https://genesisminerals.com.au/
+- https://registry.npmjs.org/genesis-minerals
+- https://pypi.org/pypi/genesis-minerals/json
+note: Genesis Minerals is an ASX-listed gold producer with no developer API, docs host or SDK. Homepage links name no SDK/developer pages; npm and PyPI return 404 for genesis-minerals (checked 2026-10-21).
+packages: []

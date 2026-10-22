@@ -1,0 +1,20 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/genesis-minerals/integrations
+- https://n8n.io/integrations/genesis-minerals/
+- https://composio.dev/toolkits/genesis-minerals
+- https://monid.ai/tools/genesis-minerals
+checked:
+- https://genesisminerals.com.au/
+- https://zapier.com/apps/genesis-minerals/integrations
+- https://n8n.io/integrations/genesis-minerals
+- https://composio.dev/toolkits/genesis-minerals
+- https://monid.ai/tools/genesis-minerals
+- https://n8n.io/integrations/genesis-minerals/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Mining company with no API, app marketplace listing or integrations/partners page found. Zapier app page returned
+  404 and n8n returned a 301 redirect away from the app path (2026-10-21).

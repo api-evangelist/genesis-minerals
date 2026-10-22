@@ -1,23 +1,90 @@
 aid: genesis-minerals
+
 name: Genesis Minerals
-description: 'Genesis Minerals is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Genesis Minerals Limited is an ASX-listed gold producer ("gold house") 100% focused on the Leonora and Laverton
+  districts of Western Australia, operating the Gwalia, Ulysses, Admiral, Tower Hill, Harbour Lights, Laverton, Jupiter, Redcliffe
+  and Bardoc assets, plus an in-house Genesis Mining Services business. Its website publishes investor announcements, reports,
+  presentations and sustainability information; it does not publish a public developer API or API documentation.
+
 url: https://raw.githubusercontent.com/api-evangelist/genesis-minerals/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Gold
+- Natural Resources
+- Western Australia
+- ASX Listed
+- Investor Relations
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://genesisminerals.com.au/wp-content/uploads/2024/02/logo.svg
+
 common:
+- type: Hosts
+  url: hosts/genesis-minerals-hosts.yml
+- type: Vendors
+  url: vendors/genesis-minerals-vendors.yml
+- type: DomainSecurity
+  url: security/genesis-minerals-domain-security.yml
 - type: Website
   url: https://genesisminerals.com.au/
+- type: Support
+  url: https://genesisminerals.com.au/contact-us/
+- type: PrivacyPolicy
+  url: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+- type: InvestorRelations
+  url: https://genesisminerals.com.au/investor-centre/
+- type: Careers
+  url: https://genesisminerals.com.au/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/genesisminerals/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website genesisminerals.com.au verified (title "Home - Genesis Minerals Limited"). No developer portal, API docs,
+    API reference, GitHub org, pricing or signup found on the site; the contact page answered 403 Cloudflare "Just a moment"
+    challenge to our crawler (page linked from homepage nav, kept). Facebook link answered 400 to crawler and was not added.
+  evidence:
+  - url: https://genesisminerals.com.au/
+    status: 200
+  - url: https://genesisminerals.com.au/contact-us/
+    status: 403
+  - url: https://wp-genesis-2024.s3.ap-southeast-2.amazonaws.com/media/2024/04/03141549/GMD-CORP-POL-1003-Privacy-Policy.pdf
+    status: 200
+  - url: https://genesisminerals.com.au/investor-centre/
+    status: 200
+  - url: https://genesisminerals.com.au/careers/
+    status: 200
+  - url: https://www.linkedin.com/company/genesisminerals/
+    status: 200
+  - url: https://genesisminerals.com.au/wp-content/uploads/2024/02/logo.svg
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
